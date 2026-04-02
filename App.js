@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Lista from './lista';
-import Original from './original';
+import Original from './Original';
 
-function Menu() {
+function App() {
   const [pantalla, setPantalla] = useState('Lista');
   if (pantalla === 'Lista') {
         return <Lista irAOriginal={() => setPantalla('Original')} />;
@@ -12,4 +12,4 @@ function Menu() {
   }
   return null;
 }
-export default Menu;
+export default App;
